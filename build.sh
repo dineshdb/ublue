@@ -12,8 +12,6 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# this installs a package from fedora repos
-rpm-ostree install screen
 # multi-media tools
 rpm-ostree install intel-media-driver libheif-tools libheif-freeworld heif-pixbuf-loader pipewire-codec-aptx ffmpeg ffmpegthumbnailer
 # dev tools
@@ -27,3 +25,4 @@ rpm-ostree install gnome-tweaks gnome-tweak-tool gpaste gnome-shell-extension-gp
 
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
+systemctl enable tailscaled
