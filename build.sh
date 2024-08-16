@@ -16,6 +16,9 @@ RELEASE="$(rpm -E %fedora)"
 rpm-ostree install intel-media-driver libheif-tools libheif-freeworld heif-pixbuf-loader pipewire-codec-aptx ffmpeg ffmpegthumbnailer
 # dev tools
 rpm-ostree install zsh podman-docker mold make openssl openssl-devel tinygo distrobox
+
+# kmod provides lsmod
+rpm-ostree install kmod
 # java
 rpm-ostree install java-21-openjdk-devel
 # basic utilites
