@@ -19,7 +19,7 @@ rpm-ostree install zsh podman-docker mold make openssl openssl-devel tinygo dist
 # java
 rpm-ostree install java-21-openjdk-devel
 # basic utilites
-rpm-ostree install syncthing powertop vulkan-tools tailscale
+rpm-ostree install syncthing powertop vulkan-tools tailscale wl-clipboard
 # gnome tools
 rpm-ostree install gnome-tweaks gnome-tweak-tool gpaste gnome-shell-extension-gpaste
 
