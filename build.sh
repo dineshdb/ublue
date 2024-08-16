@@ -14,10 +14,16 @@ RELEASE="$(rpm -E %fedora)"
 
 # this installs a package from fedora repos
 rpm-ostree install screen
-
-# this would install a package from rpmfusion
-# rpm-ostree install vlc
+# multi-media tools
+rpm-ostree install intel-media-driver libheif-tools libheif-freeworld heif-pixbuf-loader pipewire-codec-aptx ffmpeg ffmpegthumbnailer
+# dev tools
+rpm-ostree install zsh podman-docker mold make openssl openssl-devel tinygo distrobox
+# java
+rpm-ostree install java-21-openjdk-devel
+# basic utilites
+rpm-ostree install syncthing powertop vulkan-tools
+# gnome tools
+rpm-ostree install gnome-tweaks gnome-tweak-tool gpaste gnome-shell-extension-gpaste
 
 #### Example for enabling a System Unit File
-
 systemctl enable podman.socket
