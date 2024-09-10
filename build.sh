@@ -26,6 +26,10 @@ rpm-ostree install kmod
 rpm-ostree install java-21-openjdk-devel
 # basic utilites
 rpm-ostree install syncthing powertop vulkan-tools tailscale wl-clipboard
+
+# davfs2, used by tailscale for mounting remote filesystems
+rpm-ostree install davfs2
+
 # gnome tools
 rpm-ostree install gnome-tweaks gnome-tweak-tool gpaste gnome-shell-extension-gpaste
 
