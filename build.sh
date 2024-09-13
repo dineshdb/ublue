@@ -18,7 +18,7 @@ rpm-ostree install tuned-ppd
 # multi-media tools
 rpm-ostree install intel-media-driver libheif-tools libheif-freeworld heif-pixbuf-loader pipewire-codec-aptx ffmpeg ffmpegthumbnailer
 # dev tools
-rpm-ostree install zsh podman-docker mold make openssl openssl-devel tinygo distrobox
+rpm-ostree install zsh podman-docker mold make openssl openssl-devel tinygo distrobox git-absorb
 
 # kmod provides lsmod
 rpm-ostree install kmod
