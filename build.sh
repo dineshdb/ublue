@@ -16,7 +16,7 @@ rpm-ostree override remove power-profiles-daemon gnome-tour gnome-software gnome
 rpm-ostree install tuned-ppd
 
 # dev tools
-rpm-ostree install zsh podman-docker mold make openssl openssl-devel git-absorb
+rpm-ostree install zsh podman-docker openssl git-absorb
 
 # basic utilites
 rpm-ostree install syncthing powertop vulkan-tools tailscale wl-clipboard
