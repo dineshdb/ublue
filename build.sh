@@ -12,7 +12,7 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-rpm-ostree override remove power-profiles-daemon gnome-tour
+rpm-ostree override remove power-profiles-daemon gnome-tour gnome-software gnome-software-rpm-ostree
 rpm-ostree install tuned-ppd
 
 # dev tools
