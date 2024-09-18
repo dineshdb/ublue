@@ -15,23 +15,14 @@ RELEASE="$(rpm -E %fedora)"
 rpm-ostree override remove power-profiles-daemon gnome-tour
 rpm-ostree install tuned-ppd
 
-# multi-media tools
-rpm-ostree install intel-media-driver libheif-tools libheif-freeworld heif-pixbuf-loader pipewire-codec-aptx ffmpeg ffmpegthumbnailer
 # dev tools
-rpm-ostree install zsh podman-docker mold make openssl openssl-devel tinygo distrobox git-absorb
+rpm-ostree install zsh podman-docker mold make openssl openssl-devel git-absorb
 
-# kmod provides lsmod
-rpm-ostree install kmod
-# java
-rpm-ostree install java-21-openjdk-devel
 # basic utilites
 rpm-ostree install syncthing powertop vulkan-tools tailscale wl-clipboard
 
-# davfs2, used by tailscale for mounting remote filesystems
-rpm-ostree install davfs2
-
 # gnome tools
-rpm-ostree install gnome-tweaks gnome-tweak-tool gpaste gnome-shell-extension-gpaste
+rpm-ostree install gpaste gnome-shell-extension-gpaste
 
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
