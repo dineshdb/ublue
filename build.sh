@@ -12,17 +12,16 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-rpm-ostree override remove power-profiles-daemon gnome-tour gnome-software gnome-software-rpm-ostree
-rpm-ostree install tuned-ppd
+dnf remove -y gnome-tour gnome-software
 
 # dev tools
-rpm-ostree install zsh podman-docker openssl git-absorb
+dnf install -y zsh podman-docker openssl git-absorb
 
 # basic utilites
-rpm-ostree install syncthing powertop vulkan-tools tailscale wl-clipboard
+dnf install -y syncthing powertop vulkan-tools tailscale wl-clipboard
 
 # gnome tools
-rpm-ostree install gpaste gnome-shell-extension-gpaste
+dnf install -y gpaste gnome-shell-extension-gpaste
 
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
