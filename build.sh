@@ -21,7 +21,7 @@ dnf install -y zsh podman-docker openssl git-absorb
 dnf install -y syncthing powertop vulkan-tools tailscale wl-clipboard
 
 # gnome tools
-dnf install -y gpaste gnome-shell-extension-gpaste
+dnf install -y gpaste gnome-shell-extension-gpaste gnome-shell-extension-blur-my-shell
 
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
