@@ -51,6 +51,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY build.sh /tmp/build.sh
 # copy custom config to the target directory
 COPY ./usr /usr
+COPY ./etc /etc
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
