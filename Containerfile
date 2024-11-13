@@ -53,6 +53,9 @@ COPY build.sh /tmp/build.sh
 COPY ./usr /usr
 COPY ./etc /etc
 
+COPY --from=ghcr.io/ublue-os/akmods:asus-41 /rpms/ /tmp/rpms
+RUN dnf install -y /tmp/rpms/kmods/kmod-v4l2loopback*.rpm
+
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
     ostree container commit
