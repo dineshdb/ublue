@@ -25,6 +25,8 @@ dnf install -y gpaste gnome-shell-extension-gpaste gnome-shell-extension-blur-my
 
 dnf install -y pritunl-client
 
+dnf install -y flatpak-builder
+
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
 systemctl enable tailscaled
