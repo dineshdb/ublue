@@ -23,6 +23,8 @@ dnf install -y syncthing powertop vulkan-tools tailscale wl-clipboard
 # gnome tools
 dnf install -y gpaste gnome-shell-extension-gpaste gnome-shell-extension-blur-my-shell
 
+dnf install -y pipewire-v4l2
+
 dnf install -y pritunl-client
 
 dnf install -y flatpak-builder
