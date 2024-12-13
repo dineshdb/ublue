@@ -29,6 +29,9 @@ dnf install -y pritunl-client
 
 dnf install -y flatpak-builder
 
+# add cosmic-desktop because I want to test run it
+dnf install -y cosmic-ext-applet-clipboard-manager cosmic-desktop
+
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
 systemctl enable tailscaled
