@@ -50,8 +50,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 
 COPY build.sh /tmp/build.sh
 # copy custom config to the target directory
-COPY ./usr /usr
-COPY ./etc /etc
+COPY ./tree /
 
 COPY --from=ghcr.io/ublue-os/akmods:asus-41 /rpms/ /tmp/rpms
 RUN dnf install -y /tmp/rpms/kmods/kmod-v4l2loopback*.rpm
