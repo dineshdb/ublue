@@ -52,8 +52,9 @@ COPY build.sh /tmp/build.sh
 # copy custom config to the target directory
 COPY ./tree /
 
-COPY --from=ghcr.io/ublue-os/akmods:asus-41 /rpms/ /tmp/rpms
-RUN dnf install -y /tmp/rpms/kmods/kmod-v4l2loopback*.rpm
+# disabled since I'm not using v4l2loopback right now
+# COPY --from=ghcr.io/ublue-os/akmods:asus-41 /rpms/ /tmp/rpms
+# RUN dnf install -y /tmp/rpms/kmods/kmod-v4l2loopback*.rpm
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
