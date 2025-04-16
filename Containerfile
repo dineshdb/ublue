@@ -21,10 +21,6 @@ ARG SOURCE_IMAGE="silverblue"
 # These examples all work for silverblue/kinoite/sericea/onyx/lazurite/vauxite/base
 # - "-main"
 # - "-nvidia"
-# - "-asus"
-# - "-asus-nvidia"
-# - "-surface"
-# - "-surface-nvidia"
 #
 # aurora, bazzite and bluefin each have unique suffixes. Please check the specific image.
 # ucore has the following possible suffixes
@@ -33,7 +29,7 @@ ARG SOURCE_IMAGE="silverblue"
 # - stable-zfs
 # - stable-nvidia-zfs
 # - (and the above with testing rather than stable)
-ARG SOURCE_SUFFIX="-asus-nvidia"
+ARG SOURCE_SUFFIX="-main"
 
 ## SOURCE_TAG arg must be a version built for the specific image: eg, 39, 40, gts, latest
 ARG SOURCE_TAG="latest"
