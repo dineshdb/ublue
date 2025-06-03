@@ -20,6 +20,8 @@ dnf install -y zsh podman-docker openssl
 # basic utilites
 dnf install -y syncthing powertop vulkan-tools tailscale wl-clipboard
 
+dnf remove -y gnome-software
+
 # gnome tools
 dnf install -y gpaste gnome-shell-extension-gpaste gnome-shell-extension-blur-my-shell
 
