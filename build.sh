@@ -22,6 +22,8 @@ dnf install -y syncthing powertop vulkan-tools tailscale wl-clipboard
 
 dnf remove -y gnome-software
 
+dnf install -y rawtherapee
+
 # gnome tools
 dnf install -y gpaste gnome-shell-extension-gpaste gnome-shell-extension-blur-my-shell gtk-layer-shell gtk4-layer-shell
 
